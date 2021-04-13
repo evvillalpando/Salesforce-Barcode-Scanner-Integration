@@ -5,7 +5,7 @@
  ## How it works
  With a wireless barcode scanner, it takes in tracking numbers and/or warehouse location barcodes as input. Once it receives empty input, it ceases taking input and outputs a dataframe with the following fields:
  - **Case Number**: Used as the key for RMA cases.
- - **URL for the tracking number**: Automatically determines if it's a UPS or FedEx tracking number. Goal: add a webscraping method for pulling the date of arrival from the URL. Date received is important for determining the queue for repairs.
+ - **URL for the tracking number**: Automatically determines if it's a UPS or FedEx tracking number. Goal: ~~add a webscraping method for pulling the date of arrival from the URL~~-- DONE! Date received is important for determining the queue for repairs.
  - **Model**: the SKU of the PC being tracked. This makes it easier for repair techs to know what they're looking for.
  - **RMA Status**: A factor with several levels, including Case in Progress, RMA Shipped, and RMA Resolved (among others). This is an important attribute because it's not uncommon for RMAs such as Refunds or Replacements to be resolved before the PC arrives.
  - **Customer Email Address**: This is primarily used to determine if the case belongs to a Rent-A-Center, as we often don't prioritize these cases.
